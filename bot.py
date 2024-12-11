@@ -25,7 +25,6 @@ books = {
     "Питер Моузес - Исполнение библейских пророчеств": "http://www.blagovestnik.org/books/00139.htm",
     "Каргель И.В. - Лекции о втором пришествии Господа Иисуса Христа": "http://www.blagovestnik.org/books/00417.htm",
     "И. В. Каргель - Толкование на Книгу Откровение": "http://www.blagovestnik.org/books/00260.htm",
-    "YouTube проповедь - А Копылов. МСЦ ЕХБ - 'Израиль. Признаки пришествия': "https://www.youtube.com/watch?v=8xvFY7FrwEk&ab_channel=%D0%95%D0%B2%D0%B0%D0%BD%D0%B3%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F%D0%92%D0%B5%D1%81%D1%82%D1%8C",
     
     # Add more books here as needed
 }
