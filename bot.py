@@ -6,8 +6,12 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 
+# Load API token
+API_TOKEN = os.getenv('TELEGRAM_API_TOKEN')
+if not API_TOKEN:
+    raise ValueError("TELEGRAM_API_TOKEN is not set. Please check your environment variables.")
+
 # Initialize bot and dispatcher
-API_TOKEN = os.getenv('TELEGRAM_API_TOKEN')  # Insert your Telegram bot token here
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
 
