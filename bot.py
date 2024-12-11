@@ -22,16 +22,18 @@ main_menu.add(button_books)
 
 # Dictionary to store book links
 books = {
-    "Книга 1": "https://drive.google.com/file/d/your_link_1/view?usp=sharing",
-    "Книга 2": "https://drive.google.com/file/d/your_link_2/view?usp=sharing",
-    "Книга 3": "https://drive.google.com/file/d/your_link_3/view?usp=sharing",
+    "Питер Моузес - Исполнение библейских пророчеств": "http://www.blagovestnik.org/books/00139.htm",
+    "Каргель И.В. - Лекции о втором пришествии Господа Иисуса Христа": "http://www.blagovestnik.org/books/00417.htm",
+    "И. В. Каргель - Толкование на Книгу Откровение": "http://www.blagovestnik.org/books/00260.htm",
+    "YouTube проповедь - А Копылов. МСЦ ЕХБ - 'Израиль. Признаки пришествия': "https://www.youtube.com/watch?v=8xvFY7FrwEk&ab_channel=%D0%95%D0%B2%D0%B0%D0%BD%D0%B3%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F%D0%92%D0%B5%D1%81%D1%82%D1%8C",
+    
     # Add more books here as needed
 }
 
 @dp.message_handler(commands=['start', 'help'])
 async def send_welcome(message: types.Message):
     """Send a welcome message and show the main menu."""
-    await message.reply("Привет! Я бот, который поможет тебе доступиться к книгам. Нажмите на кнопку списка книг, чтобы просмотреть доступные файлы.", reply_markup=main_menu)
+    await message.reply("Книги, статьи, проповеди о последнем времени...", reply_markup=main_menu)
 
 @dp.message_handler(lambda message: message.text == '📚 Список книг')
 async def send_book_list(message: types.Message):
